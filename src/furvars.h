@@ -1,9 +1,9 @@
 #ifndef FURVARS_H
 #define FURVARS_H
-
-inline int comfyVar;// = 50;
-inline std::string comfyString;
-inline std::string nameCharacter;
-inline std::string speciesCharacter;
+#include <iostream>
+extern int comfyVar;
+extern std::string comfyString;
+extern std::string nameCharacter;
+extern std::string speciesCharacter;
 
 #endif // FURVARS_H
