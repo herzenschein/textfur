@@ -1,9 +1,11 @@
 #ifndef FURVARS_H
 #define FURVARS_H
 #include <iostream>
+#include "qstringcout.h"
+#include <QTextStream>
 extern int comfyVar;
-extern std::string comfyString;
-extern std::string nameCharacter;
-extern std::string speciesCharacter;
+extern QString comfyString;
+extern QString nameCharacter;
+extern QString speciesCharacter;
 
 #endif // FURVARS_H

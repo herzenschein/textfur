@@ -6,11 +6,11 @@ void comfyFunction()
 {
     if (comfyVar < (30))
     {
-        comfyString.assign("uneasy");
+        comfyString = "uneasy";
     }
     else if (comfyVar > 70 && comfyVar < 100)
     {
-        comfyString.assign("cheerful");
+        comfyString = "cheerful";
     }
     else if (comfyVar == 0)
     {
@@ -18,11 +18,11 @@ void comfyFunction()
     }
     else if (comfyVar == 100)
     {
-        comfyString.assign("like it were your little piece of heaven");
+        comfyString = "like it were your little piece of heaven";
     }
     else if (comfyVar == 50)
     {
-        comfyString.assign("comfortable");
+        comfyString = "comfortable";
     }
     else if (comfyVar > 100)
     {
@@ -30,6 +30,6 @@ void comfyFunction()
     }
     else
     {
-        comfyString.assign("different");
+        comfyString = "different";
     }
 }

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <QTextStream>
 #include "gamestart.h"
 #include "changelog.h"
 #include "furvars.h"
@@ -12,9 +13,11 @@ void gameStart()
     changelog();
     printf("\033c");
     std::cout << "First of all, what's your name?\n";
-    std::getline(std::cin, nameCharacter);
+    QTextStream name(stdin);
+    nameCharacter = name.readLine();
     std::cout << "What species are you?\n";
-    std::getline(std::cin, speciesCharacter);
+    QTextStream species(stdin);
+    speciesCharacter = species.readLine();
     printf("\033c");
     atHome();
 }

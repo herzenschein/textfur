@@ -1,6 +1,7 @@
 #include "furvars.h"
+#include <QTextStream>
 
 int comfyVar;
-std::string comfyString;
-std::string nameCharacter;
-std::string speciesCharacter;
+QString comfyString;
+QString nameCharacter;
+QString speciesCharacter;
