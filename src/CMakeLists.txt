@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(qonsole LANGUAGES CXX)
+project(textfur LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -14,11 +14,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Core REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core REQUIRED)
 
-add_executable(qonsole
+add_executable(textfur
   main.cpp
   main.h
   gamestart.cpp
   gamestart.h
+  furvars.cpp
   furvars.h
   catquest.cpp
   catquest.h
@@ -45,4 +46,4 @@ add_executable(qonsole
 
 
 )
-target_link_libraries(qonsole Qt${QT_VERSION_MAJOR}::Core)
+target_link_libraries(textfur Qt${QT_VERSION_MAJOR}::Core)
