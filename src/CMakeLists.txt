@@ -16,7 +16,6 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core REQUIRED)
 
 add_executable(textfur
   main.cpp
-  main.h
   animalquest.cpp
   animalquest.h
   gamestart.cpp
