@@ -1,5 +1,6 @@
-#include "furvars.h"
 #include <QTextStream>
+
+#include "furvars.h"
 
 int comfyVar;
 QString comfyString;

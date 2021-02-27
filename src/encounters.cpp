@@ -1,11 +1,12 @@
-#include <iostream>
-#include "encounters.h"
+#include <QRandomGenerator>
+
 #include "athome.h"
+#include "encounters.h"
+#include "qstringcout.h"
 
 void encounter()
 {
-    srand ( time(0) );
-    int enemyEncounter = rand()% 100 + 1;
+    int enemyEncounter = QRandomGenerator::global()->bounded(1,100);
     if (enemyEncounter <= 10)
     {
         griphonEncounter();
@@ -50,90 +51,90 @@ void encounter()
 
 void griphonEncounter()
 {
-    std::cin.get();
-    std::cout << "Wow, you found a smoking griphon, but you cannot fight it since it hasn't been implemented yet!\n";
-    std::cin.get();
+    qin.read(1);
+    qout << "Wow, you found a smoking griphon, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qin.read(1);
     printf("\033c");
     atHome();
 }
 
 void hyenaEncounter()
 {
-    std::cin.get();
-    std::cout << "Wow, you found a histerical hyena, but you cannot fight it since it hasn't been implemented yet!\n";
-    std::cin.get();
+    qin.read(1);
+    qout << "Wow, you found a histerical hyena, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qin.read(1);
     printf("\033c");
     atHome();
 }
 
 void komodoEncounter()
 {
-    std::cin.get();
-    std::cout << "Wow, you found a komodo dragon with identity problems, but you cannot fight it since it hasn't been implemented yet!\n";
-    std::cin.get();
+    qin.read(1);
+    qout << "Wow, you found a komodo dragon with identity problems, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qin.read(1);
     printf("\033c");
     atHome();
 }
 
 void sharkEncounter()
 {
-    std::cin.get();
-    std::cout << "Wow, you found a shark with dentures, but you cannot fight it since it hasn't been implemented yet!\n";
-    std::cin.get();
+    qin.read(1);
+    qout << "Wow, you found a shark with dentures, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qin.read(1);
     printf("\033c");
     atHome();
 }
 
 void satyrEncounter()
 {
-    std::cin.get();
-    std::cout << "Wow, you found a drunken satyr, but you cannot fight it since it hasn't been implemented yet!\n";
-    std::cin.get();
+    qin.read(1);
+    qout << "Wow, you found a drunken satyr, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qin.read(1);
     printf("\033c");
     atHome();
 }
 
 void hydraEncounter()
 {
-    std::cin.get();
-    std::cout << "Wow, you found a drug addicted hydra, but you cannot fight it since it hasn't been implemented yet!\n";
-    std::cin.get();
+    qin.read(1);
+    qout << "Wow, you found a drug addicted hydra, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qin.read(1);
     printf("\033c");
     atHome();
 }
 
 void humanEncounter()
 {
-    std::cin.get();
-    std::cout << "Wow, you found a human fursuiter, but you cannot fight it since it hasn't been implemented yet!\n";
-    std::cin.get();
+    qin.read(1);
+    qout << "Wow, you found a human fursuiter, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qin.read(1);
     printf("\033c");
     atHome();
 }
 
 void snakeEncounter()
 {
-    std::cin.get();
-    std::cout << "Wow, you found a passive-agressive snake, but you cannot fight it since it hasn't been implemented yet!\n";
-    std::cin.get();
+    qin.read(1);
+    qout << "Wow, you found a passive-agressive snake, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qin.read(1);
     printf("\033c");
     atHome();
 }
 
 void spiderEncounter()
 {
-    std::cin.get();
-    std::cout << "Wow, you found a heat stroked spider, but you cannot fight it since it hasn't been implemented yet!\n";
-    std::cin.get();
+    qin.read(1);
+    qout << "Wow, you found a heat stroked spider, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qin.read(1);
     printf("\033c");
     atHome();
 }
 
 void dragonEncounter()
 {
-    std::cin.get();
-    std::cout << "Wow, you found a gamer dragon, but you cannot fight it since it hasn't been implemented yet!\n";
-    std::cin.get();
+    qin.read(1);
+    qout << "Wow, you found a gamer dragon, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qin.read(1);
     printf("\033c");
     atHome();
 }

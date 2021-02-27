@@ -5,4 +5,5 @@ void catFriend();
 void rabbitFriend();
 void otterFriend();
 void lizardFriend();
+
 #endif // FRIENDS_H

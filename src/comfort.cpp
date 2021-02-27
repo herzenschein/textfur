@@ -1,6 +1,6 @@
 #include "comfort.h"
-#include "furvars.h"
 #include "endgame.h"
+#include "furvars.h"
 
 void comfyFunction()
 {

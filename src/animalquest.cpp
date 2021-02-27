@@ -2,5 +2,7 @@
 
 AnimalQuest::AnimalQuest()
 {
-
-}
+    isBeginningDone = false;
+    isMiddleDone = false;
+    isEndDone = false;
+};

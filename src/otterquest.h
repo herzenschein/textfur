@@ -2,4 +2,5 @@
 #define OTTERQUEST_H
 
 void otterQuest();
+
 #endif // OTTERQUEST_H

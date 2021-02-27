@@ -1,8 +1,8 @@
-#include <iostream>
 #include "rabbitquest.h"
+#include "qstringcout.h"
 
 void rabbitQuest()
 {
-    std::cout << "PLACEHOLDER\n";
-    std::cin.get();
+    qout << "PLACEHOLDER" << Qt::endl;
+    qin.read(1);
 }

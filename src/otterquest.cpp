@@ -1,8 +1,8 @@
-#include <iostream>
 #include "otterquest.h"
+#include "qstringcout.h"
 
 void otterQuest()
 {
-    std::cout << "PLACEHOLDER\n";
-    std::cin.get();
+    qout << "PLACEHOLDER" << Qt::endl;
+    qin.read(1);
 }

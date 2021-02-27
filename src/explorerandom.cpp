@@ -1,34 +1,38 @@
-#include <iostream>
+#include <QDebug>
+#include <QRandomGenerator>
+
+#include "encounters.h"
 #include "explorerandom.h"
 #include "friends.h"
-#include "encounters.h"
+#include "gamestart.h"
+#include "qstringcout.h"
+
 void exploreRandom()
 {
-    srand ( time(0) );
-    int rExploration = std::rand() % 100 + 1;
+    int rExploration = QRandomGenerator::global()->bounded(1,100);
     if (rExploration <= 10)
     {
-        std::cout << "Debug: "<< rExploration << "\n";
+        qout << rExploration << Qt::endl;
         catFriend();
     }
     else if (rExploration > 10 && rExploration <= 20)
     {
-        std::cout << "Debug: "<< rExploration << "\n";
+        qout << rExploration << Qt::endl;
         rabbitFriend();
     }
     else if (rExploration > 20 && rExploration <= 30)
     {
-        std::cout << "Debug: "<< rExploration << "\n";
+        qout << rExploration << Qt::endl;
         otterFriend();
     }
     else if (rExploration > 30 && rExploration <= 40)
     {
-        std::cout << "Debug: "<< rExploration << "\n";
+        qout << rExploration << Qt::endl;
         lizardFriend();
     }
     else
     {
-        std::cout << "Debug: "<< rExploration << "\n";
+        qout << rExploration << Qt::endl;
         encounter();
     }
 };

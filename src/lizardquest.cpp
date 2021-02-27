@@ -1,8 +1,8 @@
-#include <iostream>
 #include "lizardquest.h"
+#include "qstringcout.h"
 
 void lizardQuest()
 {
-    std::cout << "PLACEHOLDER\n";
-    std::cin.get();
+    qout << "PLACEHOLDER" << Qt::endl;
+    qin.read(1);
 }
