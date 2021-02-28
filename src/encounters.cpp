@@ -1,7 +1,13 @@
+// KDE Deps
+#include <KLocalizedString>
+
+// Qt Deps
 #include <QRandomGenerator>
 
+// General Deps
 #include "athome.h"
 #include "encounters.h"
+#include "furvars.h"
 #include "qstringcout.h"
 
 void encounter()
@@ -52,7 +58,7 @@ void encounter()
 void griphonEncounter()
 {
     qin.read(1);
-    qout << "Wow, you found a smoking griphon, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qout << encounterPlaceholder(i18n("smoking griphon")) << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -61,7 +67,7 @@ void griphonEncounter()
 void hyenaEncounter()
 {
     qin.read(1);
-    qout << "Wow, you found a histerical hyena, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qout << encounterPlaceholder(i18n("histerical hyena")) << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -70,7 +76,7 @@ void hyenaEncounter()
 void komodoEncounter()
 {
     qin.read(1);
-    qout << "Wow, you found a komodo dragon with identity problems, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qout << encounterPlaceholder(i18n("komodo dragon with identity problems")) << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -79,7 +85,7 @@ void komodoEncounter()
 void sharkEncounter()
 {
     qin.read(1);
-    qout << "Wow, you found a shark with dentures, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qout << encounterPlaceholder(i18n("shark with dentures")) << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -88,7 +94,7 @@ void sharkEncounter()
 void satyrEncounter()
 {
     qin.read(1);
-    qout << "Wow, you found a drunken satyr, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qout << encounterPlaceholder(i18n("drunken satyr")) << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -97,7 +103,7 @@ void satyrEncounter()
 void hydraEncounter()
 {
     qin.read(1);
-    qout << "Wow, you found a drug addicted hydra, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qout << encounterPlaceholder(i18n("drug addicted hydra")) << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -106,7 +112,7 @@ void hydraEncounter()
 void humanEncounter()
 {
     qin.read(1);
-    qout << "Wow, you found a human fursuiter, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qout << encounterPlaceholder(i18n("human fursuiter")) << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -115,7 +121,7 @@ void humanEncounter()
 void snakeEncounter()
 {
     qin.read(1);
-    qout << "Wow, you found a passive-agressive snake, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qout << encounterPlaceholder(i18n("passive-agressive snake")) << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -124,7 +130,7 @@ void snakeEncounter()
 void spiderEncounter()
 {
     qin.read(1);
-    qout << "Wow, you found a heat stroked spider, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qout << encounterPlaceholder(i18n("heat stroked spider")) << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -133,7 +139,7 @@ void spiderEncounter()
 void dragonEncounter()
 {
     qin.read(1);
-    qout << "Wow, you found a gamer dragon, but you cannot fight it since it hasn't been implemented yet!" << Qt::endl;
+    qout << encounterPlaceholder(i18n("gamer dragon")) << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();

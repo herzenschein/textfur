@@ -1,3 +1,7 @@
+// KDE Deps
+#include <KLocalizedString>
+
+// General Deps
 #include "athome.h"
 #include "animalquest.h"
 #include "changelog.h"
@@ -7,14 +11,14 @@
 
 void gameStart()
 {
-    qout << "Welcome to my furry game!" << Qt::endl;
-    qout << "Press enter to continue." << Qt::endl;
+    qout << i18n("Welcome to my furry game!") << Qt::endl;
+    qout << i18n("Press enter to continue.") << Qt::endl;
     qin.read(1);
     changelog();
     printf("\033c");
-    qout << "First of all, what's your name?" << Qt::endl;
+    qout << i18n("First of all, what's your name?") << Qt::endl;
     nameCharacter = qin.readLine();
-    qout << "What species are you?" << Qt::endl;
+    qout << i18n("What species are you?") << Qt::endl;
     speciesCharacter = qin.readLine();
     printf("\033c");
     atHome();

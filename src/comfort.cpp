@@ -1,3 +1,7 @@
+// KDE Deps
+#include <KLocalizedString>
+
+// General Deps
 #include "comfort.h"
 #include "endgame.h"
 #include "furvars.h"
@@ -6,11 +10,11 @@ void comfyFunction()
 {
     if (comfyVar < (30))
     {
-        comfyString = "uneasy";
+        comfyString = i18n("uneasy");
     }
     else if (comfyVar > 70 && comfyVar < 100)
     {
-        comfyString = "cheerful";
+        comfyString = i18n("cheerful");
     }
     else if (comfyVar == 0)
     {
@@ -18,11 +22,11 @@ void comfyFunction()
     }
     else if (comfyVar == 100)
     {
-        comfyString = "like it were your little piece of heaven";
+        comfyString = i18n("like it were your little piece of heaven");
     }
     else if (comfyVar == 50)
     {
-        comfyString = "comfortable";
+        comfyString = i18n("comfortable");
     }
     else if (comfyVar > 100)
     {
@@ -30,6 +34,6 @@ void comfyFunction()
     }
     else
     {
-        comfyString = "different";
+        comfyString = i18n("different");
     }
 }
