@@ -1,6 +1,6 @@
 #ifndef CHANGELOG_H
 #define CHANGELOG_H
-
-void changelog();
+#include "interface.h"
+void changelog(Interface *parent);
 
 #endif // CHANGELOG_H

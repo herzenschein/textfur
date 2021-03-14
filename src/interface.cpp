@@ -62,11 +62,14 @@ Interface::Interface(QWidget *parent) : QWidget(parent)
 
     textgame = new QTextBrowser;
     rbox->addWidget(textgame);
-    textgame->setText("Story happens here.");
-    textgame->append("This is a new line.");
+    textgame->setText("settext");
     textgame->setMinimumWidth(400);
 
     textinput = new QLineEdit;
     rbox->addWidget(textinput);
 }
 
+void Interface::addText(QString gametext)
+{
+    textgame->append(gametext);
+}

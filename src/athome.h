@@ -1,6 +1,6 @@
 #ifndef ATHOME_H
 #define ATHOME_H
-
-void atHome();
+#include "interface.h"
+void atHome(Interface *parent);
 
 #endif // ATHOME_H

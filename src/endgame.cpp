@@ -3,8 +3,8 @@
 #include "endgame.h"
 #include "qstringcout.h"
 
-void endGame()
+void endGame(Interface *parent)
 {
-    qout << "While the ending of this game is not implemented, you can continue on your quest torward this constantly constructed furry text-game." << Qt::endl;
-    atHome();
+    parent->addText("While the ending of this game is not implemented, you can continue on your quest torward this constantly constructed furry text-game.");
+    atHome(parent);
 }

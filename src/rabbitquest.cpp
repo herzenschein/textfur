@@ -4,6 +4,6 @@
 
 void rabbitQuest()
 {
-    qout << "\nPLACEHOLDER" << Qt::endl;
-    qin.read(1);
+    parent->addText("\nPLACEHOLDER");
+//    qin.read(1);
 }

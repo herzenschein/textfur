@@ -7,6 +7,7 @@
 #include "furvars.h"
 #include "qstringcout.h"
 
+
 void encounter()
 {
     int enemyEncounter = QRandomGenerator::global()->bounded(1,100);
@@ -54,90 +55,90 @@ void encounter()
 
 void griphonEncounter()
 {
-    qin.read(1);
-    qout << encounterPlaceholder("smoking griphon") << Qt::endl;
-    qin.read(1);
-    printf("\033c");
-    atHome();
+//    qin.read(1);
+    parent->addText(encounterPlaceholder("smoking griphon"));
+//    qin.read(1);
+    parent->textgame->clear();
+    atHome(parent);
 }
 
 void hyenaEncounter()
 {
-    qin.read(1);
-    qout << encounterPlaceholder("histerical hyena") << Qt::endl;
-    qin.read(1);
-    printf("\033c");
+//    qin.read(1);
+    parent->addText(encounterPlaceholder("histerical hyena"));
+//    qin.read(1);
+    parent->textgame->clear();
     atHome();
 }
 
 void komodoEncounter()
 {
-    qin.read(1);
-    qout << encounterPlaceholder("komodo dragon with identity problems") << Qt::endl;
-    qin.read(1);
-    printf("\033c");
+//    qin.read(1);
+    parent->addText(encounterPlaceholder("komodo dragon with identity problems"));
+//    qin.read(1);
+    parent->textgame->clear();
     atHome();
 }
 
 void sharkEncounter()
 {
-    qin.read(1);
-    qout << encounterPlaceholder("shark with dentures") << Qt::endl;
-    qin.read(1);
-    printf("\033c");
+//    qin.read(1);
+    parent->addText(encounterPlaceholder("shark with dentures"));
+//    qin.read(1);
+    parent->textgame->clear();
     atHome();
 }
 
 void satyrEncounter()
 {
-    qin.read(1);
-    qout << encounterPlaceholder("drunken satyr") << Qt::endl;
-    qin.read(1);
-    printf("\033c");
+//    qin.read(1);
+    parent->addText(encounterPlaceholder("drunken satyr"));
+//    qin.read(1);
+    parent->textgame->clear();
     atHome();
 }
 
 void hydraEncounter()
 {
-    qin.read(1);
-    qout << encounterPlaceholder("drug addicted hydra") << Qt::endl;
-    qin.read(1);
-    printf("\033c");
+//    qin.read(1);
+    parent->addText(encounterPlaceholder("drug addicted hydra"));
+//    qin.read(1);
+    parent->textgame->clear();
     atHome();
 }
 
 void humanEncounter()
 {
-    qin.read(1);
-    qout << encounterPlaceholder("human fursuiter") << Qt::endl;
-    qin.read(1);
-    printf("\033c");
+//    qin.read(1);
+    parent->addText(encounterPlaceholder("human fursuiter"));
+//    qin.read(1);
+    parent->textgame->clear();
     atHome();
 }
 
 void snakeEncounter()
 {
-    qin.read(1);
-    qout << encounterPlaceholder("passive-agressive snake") << Qt::endl;
-    qin.read(1);
-    printf("\033c");
+//    qin.read(1);
+    parent->addText(encounterPlaceholder("passive-agressive snake"));
+//    qin.read(1);
+    parent->textgame->clear();
     atHome();
 }
 
 void spiderEncounter()
 {
-    qin.read(1);
-    qout << encounterPlaceholder("heat stroked spider") << Qt::endl;
-    qin.read(1);
-    printf("\033c");
+//    qin.read(1);
+    parent->addText(encounterPlaceholder("heat stroked spider"));
+//    qin.read(1);
+    parent->textgame->clear();
     atHome();
 }
 
 void dragonEncounter()
 {
-    qin.read(1);
-    qout << encounterPlaceholder("gamer dragon") << Qt::endl;
-    qin.read(1);
-    printf("\033c");
+//    qin.read(1);
+    parent->addText(encounterPlaceholder("gamer dragon"));
+//    qin.read(1);
+    parent->textgame->clear();
     atHome();
 }

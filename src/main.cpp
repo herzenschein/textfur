@@ -1,18 +1,20 @@
 // Qt Deps
-#include <QCoreApplication>
+//#include <QCoreApplication>
 #include <QApplication>
 
 // General Deps
-#include "interface.h"
 #include "gamestart.h"
+//#include "main.h"
+//#include "qstringcout.h"
 
 int main(int argc, char *argv[])
 {
     QApplication textfur(argc, argv);
-    Interface window;
-    gameStart();
-    window.show();
+    Interface *window = new Interface;
+    window->show();
+    gameStart(window);
     textfur.exec();
-    return EXIT_SUCCESS;
+
+//    return EXIT_SUCCESS;
 }
 

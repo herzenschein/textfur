@@ -1,23 +1,24 @@
 // General Deps
-#include "athome.h"
-#include "animalquest.h"
+//#include "athome.h"
+//#include "animalquest.h"
 #include "changelog.h"
-#include "furvars.h"
-#include "gamestart.h"
-#include "qstringcout.h"
+//#include "furvars.h"
+//#include "gamestart.h"
+//#include "qstringcout.h"
 
-
-void gameStart()
+void gameStart(Interface *parent)
 {
-    qout << "Welcome to my furry game!" << Qt::endl;
-    qout << "Press enter to continue." << Qt::endl;
-    qin.read(1);
-    changelog();
-    printf("\033c");
-    qout << "First of all, what's your name?" << Qt::endl;
-    nameCharacter = qin.readLine();
-    qout << "What species are you?" << Qt::endl;
-    speciesCharacter = qin.readLine();
-    printf("\033c");
-    atHome();
+    parent->addText("Works!");
+    parent->addText("Welcome to my furry game!");
+    parent->addText("Press enter to continue.");
+//    qin.read(1);
+    changelog(parent);
+    parent->textgame->clear();
+    parent->addText("First of all, what's your name?");
+//    nameCharacter = qin.readLine();
+    parent->addText("What species are you?");
+//    speciesCharacter = qin.readLine();
+    parent->textgame->clear();
+    parent->addText("Confirm it works!");
+//    atHome();
 }

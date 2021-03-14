@@ -1,6 +1,6 @@
 #ifndef ENCOUNTERS_H
 #define ENCOUNTERS_H
-
+#include "interface.h"
 void encounter();
 void griphonEncounter();
 void hyenaEncounter();

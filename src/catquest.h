@@ -1,6 +1,6 @@
 #ifndef CATQUEST_H
 #define CATQUEST_H
-
-void catQuest();
+#include "interface.h"
+void catQuest(Interface *parent);
 
 #endif // CATQUEST_H

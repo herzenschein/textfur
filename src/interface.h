@@ -9,6 +9,7 @@
 #include <QLabel>
 #include <QLineEdit>
 #include <QTextBrowser>
+#include <QString>
 
 class Interface : public QWidget
 {
@@ -29,10 +30,9 @@ public:
     QLabel *species;
     QLineEdit *speciesvalue;
     QTextBrowser *home;
-    QTextBrowser *textgame;
     QLineEdit *textinput;
-signals:
-
+    QTextBrowser *textgame;
+    void addText(QString gametext);
 };
 
 #endif // INTERFACE_H

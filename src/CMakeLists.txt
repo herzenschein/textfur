@@ -15,38 +15,39 @@ find_package(Qt6 COMPONENTS Widgets Core REQUIRED)
 
 add_executable(textfur
   main.cpp
+  main.h
   interface.cpp
   interface.h
-  animalquest.cpp
-  animalquest.h
+#  animalquest.cpp
+#  animalquest.h
   gamestart.cpp
   gamestart.h
   furvars.cpp
   furvars.h
-  catquest.cpp
-  catquest.h
-  rabbitquest.cpp
-  rabbitquest.h
-  otterquest.cpp
-  otterquest.h
-  lizardquest.cpp
-  lizardquest.h
+#  catquest.cpp
+#  catquest.h
+#  rabbitquest.cpp
+#  rabbitquest.h
+#  otterquest.cpp
+#  otterquest.h
+#  lizardquest.cpp
+#  lizardquest.h
   changelog.cpp
   changelog.h
-  encounters.cpp
-  encounters.h
-  friends.cpp
-  friends.h
+#  encounters.cpp
+#  encounters.h
+#  friends.cpp
+#  friends.h
   athome.cpp
   athome.h
   comfort.cpp
   comfort.h
-  endgame.cpp
-  endgame.h
-  explorerandom.cpp
-  explorerandom.h
-  qstringcout.cpp
-  qstringcout.h
+#  endgame.cpp
+#  endgame.h
+#  explorerandom.cpp
+#  explorerandom.h
+#  qstringcout.cpp
+#  qstringcout.h
 
 
 )
