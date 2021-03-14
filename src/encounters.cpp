@@ -1,6 +1,3 @@
-// KDE Deps
-#include <KLocalizedString>
-
 // Qt Deps
 #include <QRandomGenerator>
 
@@ -58,7 +55,7 @@ void encounter()
 void griphonEncounter()
 {
     qin.read(1);
-    qout << encounterPlaceholder(i18n("smoking griphon")) << Qt::endl;
+    qout << encounterPlaceholder("smoking griphon") << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -67,7 +64,7 @@ void griphonEncounter()
 void hyenaEncounter()
 {
     qin.read(1);
-    qout << encounterPlaceholder(i18n("histerical hyena")) << Qt::endl;
+    qout << encounterPlaceholder("histerical hyena") << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -76,7 +73,7 @@ void hyenaEncounter()
 void komodoEncounter()
 {
     qin.read(1);
-    qout << encounterPlaceholder(i18n("komodo dragon with identity problems")) << Qt::endl;
+    qout << encounterPlaceholder("komodo dragon with identity problems") << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -85,7 +82,7 @@ void komodoEncounter()
 void sharkEncounter()
 {
     qin.read(1);
-    qout << encounterPlaceholder(i18n("shark with dentures")) << Qt::endl;
+    qout << encounterPlaceholder("shark with dentures") << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -94,7 +91,7 @@ void sharkEncounter()
 void satyrEncounter()
 {
     qin.read(1);
-    qout << encounterPlaceholder(i18n("drunken satyr")) << Qt::endl;
+    qout << encounterPlaceholder("drunken satyr") << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -103,7 +100,7 @@ void satyrEncounter()
 void hydraEncounter()
 {
     qin.read(1);
-    qout << encounterPlaceholder(i18n("drug addicted hydra")) << Qt::endl;
+    qout << encounterPlaceholder("drug addicted hydra") << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -112,7 +109,7 @@ void hydraEncounter()
 void humanEncounter()
 {
     qin.read(1);
-    qout << encounterPlaceholder(i18n("human fursuiter")) << Qt::endl;
+    qout << encounterPlaceholder("human fursuiter") << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -121,7 +118,7 @@ void humanEncounter()
 void snakeEncounter()
 {
     qin.read(1);
-    qout << encounterPlaceholder(i18n("passive-agressive snake")) << Qt::endl;
+    qout << encounterPlaceholder("passive-agressive snake") << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -130,7 +127,7 @@ void snakeEncounter()
 void spiderEncounter()
 {
     qin.read(1);
-    qout << encounterPlaceholder(i18n("heat stroked spider")) << Qt::endl;
+    qout << encounterPlaceholder("heat stroked spider") << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
@@ -139,7 +136,7 @@ void spiderEncounter()
 void dragonEncounter()
 {
     qin.read(1);
-    qout << encounterPlaceholder(i18n("gamer dragon")) << Qt::endl;
+    qout << encounterPlaceholder("gamer dragon") << Qt::endl;
     qin.read(1);
     printf("\033c");
     atHome();
