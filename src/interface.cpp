@@ -69,3 +69,4 @@ Interface::Interface(QWidget *parent) : QWidget(parent)
     textinput = new QLineEdit;
     rbox->addWidget(textinput);
 }
+

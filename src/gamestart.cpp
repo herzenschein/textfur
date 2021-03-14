@@ -6,6 +6,7 @@
 #include "gamestart.h"
 #include "qstringcout.h"
 
+
 void gameStart()
 {
     qout << "Welcome to my furry game!" << Qt::endl;

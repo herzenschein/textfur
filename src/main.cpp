@@ -8,9 +8,11 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication textfur(argc, argv);
+    QApplication textfur(argc, argv);
     Interface window;
     gameStart();
+    window.show();
+    textfur.exec();
     return EXIT_SUCCESS;
 }
 
