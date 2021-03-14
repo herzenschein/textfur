@@ -11,13 +11,12 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 COMPONENTS Core REQUIRED)
-#find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core REQUIRED)
-#find_package(KF5I18n)
-#ki18n_install(po)
+find_package(Qt6 COMPONENTS Widgets Core REQUIRED)
 
 add_executable(textfur
   main.cpp
+  interface.cpp
+  interface.h
   animalquest.cpp
   animalquest.h
   gamestart.cpp
@@ -51,4 +50,4 @@ add_executable(textfur
 
 
 )
-target_link_libraries(textfur Qt6::Core)
+target_link_libraries(textfur Qt6::Core Qt6::Widgets)
