@@ -24,28 +24,28 @@ add_executable(textfur
   gamestart.h
   furvars.cpp
   furvars.h
-#  catquest.cpp
-#  catquest.h
-#  rabbitquest.cpp
-#  rabbitquest.h
-#  otterquest.cpp
-#  otterquest.h
-#  lizardquest.cpp
-#  lizardquest.h
+  catquest.cpp
+  catquest.h
+  rabbitquest.cpp
+  rabbitquest.h
+  otterquest.cpp
+  otterquest.h
+  lizardquest.cpp
+  lizardquest.h
   changelog.cpp
   changelog.h
-#  encounters.cpp
-#  encounters.h
-#  friends.cpp
-#  friends.h
+  encounters.cpp
+  encounters.h
+  friends.cpp
+  friends.h
   athome.cpp
   athome.h
   comfort.cpp
   comfort.h
 #  endgame.cpp
 #  endgame.h
-#  explorerandom.cpp
-#  explorerandom.h
+  explorerandom.cpp
+  explorerandom.h
 #  qstringcout.cpp
 #  qstringcout.h
 

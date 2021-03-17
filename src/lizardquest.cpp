@@ -2,8 +2,8 @@
 #include "lizardquest.h"
 #include "qstringcout.h"
 
-void lizardQuest()
+void lizardQuest(Interface *parent)
 {
-    qout << "\nPLACEHOLDER" << Qt::endl;
-    qin.read(1);
+    parent->addText("\nPLACEHOLDER");
+//    qin.read(1);
 }

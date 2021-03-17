@@ -2,7 +2,7 @@
 #include "catquest.h"
 #include "qstringcout.h"
 
-void catQuest(parent)
+void catQuest(Interface *parent)
 {
     parent->addText("'So you came to visit, huh', he said, calmly arranging some boxes, and then offered: 'Please have a sit'.\n\n"
             "As you get yourself as comfortable as you can on the splinterful crate, you notice and recall his 'bedroom' and furniture to your left, further in the alley, in an arrangement that reminds you of french decoration.\n\n"

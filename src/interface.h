@@ -10,10 +10,13 @@
 #include <QLineEdit>
 #include <QTextBrowser>
 #include <QString>
-
+#include <QKeyEvent>
+#include <QPushButton>
+#include <QTimer>
 class Interface : public QWidget
 {
     Q_OBJECT
+    QTimer *typingTimer;
 public:
     explicit Interface(QWidget *parent = nullptr);
     QHBoxLayout *main;
@@ -32,7 +35,12 @@ public:
     QTextBrowser *home;
     QLineEdit *textinput;
     QTextBrowser *textgame;
+    QString getText();
+    void changeSpecies(Interface *parent, QString specvalue);
+    void changeComfort(Interface *parent, int comfvalue);
+    void appendText();
     void addText(QString gametext);
+
 };
 
 #endif // INTERFACE_H

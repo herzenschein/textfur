@@ -4,8 +4,6 @@
 
 // General Deps
 #include "gamestart.h"
-//#include "main.h"
-//#include "qstringcout.h"
 
 int main(int argc, char *argv[])
 {

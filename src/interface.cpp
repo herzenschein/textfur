@@ -1,5 +1,7 @@
 #include "interface.h"
 
+
+
 Interface::Interface(QWidget *parent) : QWidget(parent)
 {
     // Create layouts
@@ -59,17 +61,52 @@ Interface::Interface(QWidget *parent) : QWidget(parent)
     home->setText("You are at home.");
     home->setAlignment(Qt::AlignHCenter);
     home->setMinimumWidth(130);
+    home->setFocusPolicy(Qt::NoFocus);
 
     textgame = new QTextBrowser;
     rbox->addWidget(textgame);
-    textgame->setText("settext");
     textgame->setMinimumWidth(400);
+    textgame->setFocusPolicy(Qt::NoFocus);
 
     textinput = new QLineEdit;
     rbox->addWidget(textinput);
+    textinput->displayText();
+    textinput->setFocus();
+
+    QObject::connect(
+                textinput,
+                &QLineEdit::returnPressed,
+                this,
+                &Interface::appendText
+                );
+
+
+}
+
+void Interface::appendText(){
+    textgame->append(textinput->text());
+    textinput->clear();
 }
 
 void Interface::addText(QString gametext)
 {
     textgame->append(gametext);
+}
+
+QString Interface::getText()
+{
+    QString inputtext = textinput->text();
+    if (textinput->isModified()) emit textinput->returnPressed();
+    textinput->clear();
+    return inputtext;
+}
+
+void Interface::changeComfort(Interface *parent, int comfvalue)
+{
+    parent->comfyvalue->setText(QString::number(comfvalue));
+}
+
+void Interface::changeSpecies(Interface *parent, QString specvalue)
+{
+    parent->speciesvalue->setText(specvalue);
 }

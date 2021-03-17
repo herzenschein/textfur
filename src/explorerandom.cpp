@@ -8,33 +8,34 @@
 #include "friends.h"
 #include "gamestart.h"
 #include "qstringcout.h"
+#include "interface.h"
 
-void exploreRandom()
+void exploreRandom(Interface *parent)
 {
     int rExploration = QRandomGenerator::global()->bounded(1,100);
     if (rExploration <= 10)
     {
-        qout << rExploration;
-        catFriend();
+        parent->addText(QString::number(rExploration));
+        catFriend(parent);
     }
     else if (rExploration > 10 && rExploration <= 20)
     {
-        qout << rExploration;
-        rabbitFriend();
+        parent->addText(QString::number(rExploration));
+        rabbitFriend(parent);
     }
     else if (rExploration > 20 && rExploration <= 30)
     {
-        qout << rExploration;
-        otterFriend();
+        parent->addText(QString::number(rExploration));
+        otterFriend(parent);
     }
     else if (rExploration > 30 && rExploration <= 40)
     {
-        qout << rExploration;
-        lizardFriend();
+        parent->addText(QString::number(rExploration));
+        lizardFriend(parent);
     }
     else
     {
-        qout << rExploration;
-        encounter();
+        parent->addText(QString::number(rExploration));
+        encounter(parent);
     }
 };

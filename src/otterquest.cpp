@@ -2,8 +2,8 @@
 #include "otterquest.h"
 #include "qstringcout.h"
 
-void otterQuest()
+void otterQuest(Interface *parent)
 {
-    qout << "\nPLACEHOLDER" << Qt::endl;
-    qin.read(1);
+    parent->addText("\nPLACEHOLDER");
+//    qin.read(1);
 }
