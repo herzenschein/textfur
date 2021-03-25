@@ -4,5 +4,5 @@
 void otterQuest(Interface *parent)
 {
     parent->addText("\nPLACEHOLDER");
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
 }

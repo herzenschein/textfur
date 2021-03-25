@@ -55,6 +55,9 @@ Interface::Interface(QWidget *parent) : QWidget(parent)
     info->addRow(nchar, ncharvalue);
     info->addRow(species, speciesvalue);
 
+    // Create textgame area
+
+    // This one always shows the description of your home
     home = new QTextBrowser;
     homebox->addWidget(home);
     home->setText("You are at home.");
@@ -62,16 +65,20 @@ Interface::Interface(QWidget *parent) : QWidget(parent)
     home->setMinimumWidth(130);
     home->setFocusPolicy(Qt::NoFocus);
 
+    // This one shows the textgame content
     textgame = new QTextBrowser;
     rbox->addWidget(textgame);
     textgame->setMinimumWidth(400);
     textgame->setFocusPolicy(Qt::NoFocus);
 
+    // This one transfers input from user to textgame
     textinput = new QLineEdit;
     rbox->addWidget(textinput);
     textinput->displayText();
     textinput->setFocus();
 
+    // Temporary: if user presses enter (signal),
+    // current text from textinput gets added to textgame (slot)
     QObject::connect(
                 textinput,
                 &QLineEdit::returnPressed,
@@ -82,16 +89,22 @@ Interface::Interface(QWidget *parent) : QWidget(parent)
 
 }
 
+// This is specifically for the textinput > textgame transmission
 void Interface::appendText(){
     textgame->append(textinput->text());
     textinput->clear();
 }
 
+// This is a general append function
 void Interface::addText(QString gametext)
 {
     textgame->append(gametext);
 }
 
+// Hypothetical: this is a placeholder for validating input.
+// If a "wait for user input" is implemented, this can be
+// switched to a simple if value == character then return 0 else return 1
+// Reminder: refactor if possible
 QString Interface::getText()
 {
     QString inputtext = textinput->text();
@@ -100,11 +113,16 @@ QString Interface::getText()
     return inputtext;
 }
 
+// These are for later
+// This changes the value of comfyvalue dynamically
+// It needs to cast to QString in order to fit a QLineEdit
 void Interface::changeComfort(Interface *parent, int comfvalue)
 {
     parent->comfyvalue->setText(QString::number(comfvalue));
 }
 
+// This changes the value of the species if need be;
+// Possibly unneeded, we'll see
 void Interface::changeSpecies(Interface *parent, QString specvalue)
 {
     parent->speciesvalue->setText(specvalue);

@@ -17,8 +17,9 @@
 class Interface : public QWidget
 {
     Q_OBJECT
-    QTimer *typingTimer;
 public:
+    // So far, everything is public;
+    // I'll worry about private and protected later.
     explicit Interface(QWidget *parent = nullptr);
     QHBoxLayout *main;
     QVBoxLayout *lbox;

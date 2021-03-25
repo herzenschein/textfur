@@ -17,11 +17,11 @@ void catFriend(Interface *parent)
             "and notice your ol'childhood friend, Snow, whose footsteps you cannot perceive, "
             "nor can you keep yourself unable to be scared every time he appears."
             "'What brings you here, then?'\n");
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     comfyVar += 1;
     catQuest(parent);
     parent->addText(eventPlaceholder("cat"));
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     printf("\033c");
     atHome(parent);
 }
@@ -34,11 +34,11 @@ void rabbitFriend(Interface *parent)
             "Why would he be in a workshop, being as puny and lazy as he usually is?\n"
             "'Well, nevermind, found it', he said, while walking torward his bench. "
             "'And what brings you here?'");
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     comfyVar += 1;
     rabbitQuest(parent);
     parent->addText(eventPlaceholder("rabbit"));
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     printf("\033c");
     atHome(parent);
 }
@@ -53,11 +53,11 @@ void otterFriend(Interface *parent)
             "given his strict nihilism towards everything related to purpose.\n"
             "As jovial a smile as he stands just lightly pulling your arms towards the pool side, "
             "as bold a believer of a meaningless life.");
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     comfyVar += 1;
     otterQuest(parent);
     parent->addText(eventPlaceholder("otter"));
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     printf("\033c");
     atHome(parent);
 }
@@ -72,11 +72,11 @@ void lizardFriend(Interface *parent)
             "His trunk is bulkier than a tree's, arms thicker than your neck, "
             "thighs bigger than your trunk, yet two thirds of your height. "
             "A stance more solid than a wall, and yet, here he is: practically a flying kite.");
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     comfyVar += 1;
     lizardQuest(parent);
     parent->addText(eventPlaceholder("lizard"));
-//    qin.read(1);
-//    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }

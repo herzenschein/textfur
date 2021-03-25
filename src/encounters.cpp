@@ -52,92 +52,95 @@ void encounter(Interface *parent)
     }
 }
 
+// Everything is in a single file because in theory each encounter would instantiate a battle.
+// The game needs to be functional first.
+
 void griphonEncounter(Interface *parent)
 {
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     parent->addText(encounterPlaceholder("smoking griphon"));
-//    qin.read(1);
-    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }
 
 void hyenaEncounter(Interface *parent)
 {
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     parent->addText(encounterPlaceholder("histerical hyena"));
-//    qin.read(1);
-    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }
 
 void komodoEncounter(Interface *parent)
 {
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     parent->addText(encounterPlaceholder("komodo dragon with identity problems"));
-//    qin.read(1);
-    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }
 
 void sharkEncounter(Interface *parent)
 {
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     parent->addText(encounterPlaceholder("shark with dentures"));
-//    qin.read(1);
-    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }
 
 void satyrEncounter(Interface *parent)
 {
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     parent->addText(encounterPlaceholder("drunken satyr"));
-//    qin.read(1);
-    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }
 
 void hydraEncounter(Interface *parent)
 {
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     parent->addText(encounterPlaceholder("drug addicted hydra"));
-//    qin.read(1);
-    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }
 
 void humanEncounter(Interface *parent)
 {
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     parent->addText(encounterPlaceholder("human fursuiter"));
-//    qin.read(1);
-    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }
 
 void snakeEncounter(Interface *parent)
 {
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     parent->addText(encounterPlaceholder("passive-agressive snake"));
-//    qin.read(1);
-    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }
 
 void spiderEncounter(Interface *parent)
 {
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     parent->addText(encounterPlaceholder("heat stroked spider"));
-//    qin.read(1);
-    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }
 
 void dragonEncounter(Interface *parent)
 {
-//    qin.read(1);
+//    WAIT FOR INPUT HERE
     parent->addText(encounterPlaceholder("gamer dragon"));
-//    qin.read(1);
-    parent->textgame->clear();
+//    WAIT FOR INPUT HERE
+//    CLEAR SCREEN HERE
     atHome(parent);
 }
