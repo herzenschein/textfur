@@ -10,9 +10,6 @@
 #include <QLineEdit>
 #include <QTextBrowser>
 #include <QString>
-#include <QKeyEvent>
-#include <QPushButton>
-#include <QTimer>
 
 class Interface : public QWidget
 {

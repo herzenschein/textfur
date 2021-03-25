@@ -4,6 +4,9 @@
 #include "explorerandom.h"
 #include "furvars.h"
 
+#include <QRegularExpression>
+#include <QValidator>
+
 void atHome(Interface *parent)
 {
     // Calculate value of comfyVar
@@ -13,6 +16,12 @@ void atHome(Interface *parent)
     parent->addText("It seems somewhat " + comfyString + " to you.");
     parent->addText("There's always something to do outside, never anything inside.");
     parent->addText("If you'd like to go outside, type x and Enter.");
+
+    // Create a pattern to validate
+    QRegularExpression rx("x");
+    // Force the only acceptable input of textinput to be pattern "x"
+    parent->textinput->setValidator(new QRegularExpressionValidator(rx));
+
 
     // Check for input, if it is "x", cause random encounter;
     // could wait for user input with QKeyEvent or whatever instead of parsing user input

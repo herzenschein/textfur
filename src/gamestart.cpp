@@ -1,6 +1,3 @@
-// Qt Deps
-#include <QTimer>
-#include <QValidator>
 // General Deps
 #include "athome.h"
 #include "changelog.h"
@@ -10,10 +7,19 @@ void gameStart(Interface *parent)
     parent->addText("Welcome to my furry game!");
     parent->addText("Press enter to continue.");
 
-    // Create a pattern to validate
-    QRegularExpression rx("x");
-    // Force the only acceptable input of textinput to be pattern "x"
-    parent->textinput->setValidator(new QRegularExpressionValidator(rx));
+    /*
+     This is the first place where waiting for input is needed.
+     The most reasonable course of action seems to be:
+     If user presses Return/Enter in the QLineEdit textinput,
+     then the codes proceeds execution.
+
+     It cannot be "if user presses Return/Enter in the QLineEdit textinput,
+     run this new function that simply adds the next text in line".
+     From what I gather, it can't simply use a signal/slot mechanism
+     because then I'd have to create a new function to serve as slot every time.
+     It would break the "don't repeat yourself" rule.
+    */
+
 
     // Goes to: changelog.cpp
     changelog(parent);

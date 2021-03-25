@@ -89,7 +89,8 @@ Interface::Interface(QWidget *parent) : QWidget(parent)
 
 }
 
-// This is specifically for the textinput > textgame transmission
+// This is specifically for the textinput > textgame transmission,
+// hence why no parameter is needed
 void Interface::appendText(){
     textgame->append(textinput->text());
     textinput->clear();
