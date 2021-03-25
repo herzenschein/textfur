@@ -7,7 +7,6 @@
 #include "explorerandom.h"
 #include "friends.h"
 #include "gamestart.h"
-#include "qstringcout.h"
 #include "interface.h"
 
 void exploreRandom(Interface *parent)

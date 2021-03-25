@@ -1,6 +1,8 @@
 #ifndef ENCOUNTERS_H
 #define ENCOUNTERS_H
+
 #include "interface.h"
+
 void encounter(Interface *parent);
 void griphonEncounter(Interface *parent);
 void hyenaEncounter(Interface *parent);

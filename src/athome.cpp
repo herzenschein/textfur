@@ -3,7 +3,6 @@
 #include "comfort.h"
 #include "explorerandom.h"
 #include "furvars.h"
-#include "qstringcout.h"
 
 void atHome(Interface *parent)
 {

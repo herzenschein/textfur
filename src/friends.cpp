@@ -3,10 +3,8 @@
 #include "friends.h"
 #include "furvars.h"
 #include "gamestart.h"
-#include "qstringcout.h"
 
 // Quest Deps
-#include "animalquest.h"
 #include "catquest.h"
 #include "rabbitquest.h"
 #include "otterquest.h"

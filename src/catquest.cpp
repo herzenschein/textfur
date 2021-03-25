@@ -1,6 +1,5 @@
 // General Deps
 #include "catquest.h"
-#include "qstringcout.h"
 
 void catQuest(Interface *parent)
 {

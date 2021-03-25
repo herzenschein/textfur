@@ -1,6 +1,5 @@
+// General Deps
 #include "interface.h"
-
-
 
 Interface::Interface(QWidget *parent) : QWidget(parent)
 {
@@ -42,7 +41,7 @@ Interface::Interface(QWidget *parent) : QWidget(parent)
 
     ncharvalue = new QLineEdit;
     ncharvalue->setReadOnly(true);
-    ncharvalue->setText("Blumen");
+    ncharvalue->setText("Your Name Here");
 
     species = new QLabel;
     species->setText("<i>Species</i>");
@@ -50,7 +49,7 @@ Interface::Interface(QWidget *parent) : QWidget(parent)
     speciesvalue = new QLineEdit;
     speciesvalue->setMaximumWidth(100);
     speciesvalue->setReadOnly(true);
-    speciesvalue->setText("Rabbit");
+    speciesvalue->setText("Human");
 
     info->addRow(comfy, comfyvalue);
     info->addRow(nchar, ncharvalue);

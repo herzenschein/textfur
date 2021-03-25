@@ -1,6 +1,5 @@
 // General Deps
 #include "comfort.h"
-#include "endgame.h"
 #include "furvars.h"
 
 void comfyFunction()
@@ -15,7 +14,7 @@ void comfyFunction()
     }
     else if (comfyVar == 0)
     {
-        endGame();
+        comfyString = "non-existent";
     }
     else if (comfyVar == 100)
     {

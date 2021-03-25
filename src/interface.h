@@ -13,6 +13,7 @@
 #include <QKeyEvent>
 #include <QPushButton>
 #include <QTimer>
+
 class Interface : public QWidget
 {
     Q_OBJECT

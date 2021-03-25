@@ -1,5 +1,5 @@
 // Qt Deps
-#include <QTextStream>
+//#include <QTextStream>
 
 // General Deps
 #include "furvars.h"

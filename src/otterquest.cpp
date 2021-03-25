@@ -1,6 +1,5 @@
 // General Deps
 #include "otterquest.h"
-#include "qstringcout.h"
 
 void otterQuest(Interface *parent)
 {

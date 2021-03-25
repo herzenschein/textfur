@@ -1,6 +1,5 @@
 // General Deps
 #include "changelog.h"
-#include "qstringcout.h"
 
 void changelog(Interface *parent){
 //    parent->textgame->clear();

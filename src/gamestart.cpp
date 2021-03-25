@@ -1,12 +1,9 @@
+// Qt Deps
+#include <QTimer>
+#include <QValidator>
 // General Deps
 #include "athome.h"
-//#include "animalquest.h"
 #include "changelog.h"
-#include <QValidator>
-#include <QTimer>
-//#include "furvars.h"
-//#include "gamestart.h"
-//#include "qstringcout.h"
 
 void gameStart(Interface *parent)
 {

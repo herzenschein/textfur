@@ -5,7 +5,6 @@
 #include "athome.h"
 #include "encounters.h"
 #include "furvars.h"
-#include "qstringcout.h"
 
 
 void encounter(Interface *parent)

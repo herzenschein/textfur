@@ -1,5 +1,4 @@
 // Qt Deps
-//#include <QCoreApplication>
 #include <QApplication>
 
 // General Deps

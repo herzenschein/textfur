@@ -1,6 +1,5 @@
 // General Deps
 #include "lizardquest.h"
-#include "qstringcout.h"
 
 void lizardQuest(Interface *parent)
 {
