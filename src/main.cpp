@@ -2,18 +2,22 @@
 #include <QApplication>
 
 // General Deps
-#include "gamestart.h"
+#include <mainwindow.h>
+#include <character.h>
 
-int main(int argc, char *argv[])
+
+int main(int argCount, char *argVector[])
 {
-    QApplication textfur(argc, argv);
-    // Simply create a window, show it and start the game
-    Interface *window = new Interface;
-    window->show();
-    // Goes to: gamestart.cpp
-    gameStart(window);
-    textfur.exec();
+    QApplication textfur(argCount, argVector);
 
-//    return EXIT_SUCCESS;
+    // This window shows the content
+    MainWindow window;
+    window.show();
+
+    // Player should contain mutable information
+    // that changes throughout the game
+    Character* player;
+
+    textfur.exec();
 }
 
