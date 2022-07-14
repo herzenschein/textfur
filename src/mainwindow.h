@@ -1,18 +1,13 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
 #include <QLabel>
+#include <QMainWindow>
 
-
-class MainWindow : public QMainWindow
+struct MainWindow : public QMainWindow
 {
-public:
-    explicit MainWindow(QWidget *parent = nullptr);
-private:
-    QLabel nameField;
-signals:
-
+  explicit MainWindow(QWidget* parent = nullptr) noexcept;
+  QLabel nameField;
 };
 
 #endif // MAINWINDOW_H
