@@ -1,36 +1,15 @@
 #include "character.h"
 
-Character::Character() : name("Character"), species("rabbit"), comfy(50)
+Character& Character::get()
 {
-
+  return instance;
 }
 
-const QString &Character::getName() const
+Character::Character() noexcept
+  : name { "Character" }
+  , species { "rabbit" }
+  , comfy { 50 }
 {
-    return name;
 }
 
-void Character::setName(const QString &newName)
-{
-    name = newName;
-}
-
-const QString &Character::getSpecies() const
-{
-    return species;
-}
-
-void Character::setSpecies(const QString &newSpecies)
-{
-    species = newSpecies;
-}
-
-const int &Character::getComfy() const
-{
-    return comfy;
-}
-
-void Character::setComfy(const int &newComfy)
-{
-    comfy = newComfy;
-}
+Character Character::instance;

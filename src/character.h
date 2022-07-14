@@ -3,24 +3,20 @@
 
 #include <QString>
 
-class Character
+struct Character
 {
-public:
-    Character();
+  QString           name;
+  QString           species;
+  int               comfy;
+  static Character& get();
+  static Character  instance;
 
-    const QString &getName() const;
-    void setName(const QString &newName);
-
-    const QString &getSpecies() const;
-    void setSpecies(const QString &newSpecies);
-
-    const int &getComfy() const;
-    void setComfy(const int &newComfy);
-
-private:
-    QString name;
-    QString species;
-    int comfy;
+ private:
+  Character();
+  explicit Character(const Character&) = delete;
+  explicit Character(Character&&)      = delete;
+  Character operator=(const Character&) = delete;
+  Character operator=(Character&&) = delete;
 };
 
 #endif // CHARACTER_H
