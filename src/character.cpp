@@ -2,6 +2,7 @@
 
 Character& Character::get()
 {
+  static Character instance;
   return instance;
 }
 
@@ -11,5 +12,3 @@ Character::Character() noexcept
   , comfy { 50 }
 {
 }
-
-Character Character::instance;

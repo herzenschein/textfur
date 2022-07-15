@@ -9,7 +9,6 @@ struct Character
   QString           species;
   int               comfy;
   static Character& get();
-  static Character  instance;
 
  private:
   Character();
