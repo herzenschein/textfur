@@ -6,8 +6,8 @@
 
 struct MainWindow : public QMainWindow
 {
-  explicit MainWindow(QWidget* parent = nullptr) noexcept;
-  QLabel nameField;
+    explicit MainWindow(QWidget* parent = nullptr) noexcept;
+    QLabel nameField;
 };
 
 #endif // MAINWINDOW_H

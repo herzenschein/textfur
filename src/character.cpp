@@ -2,8 +2,8 @@
 
 Character& Character::get()
 {
-  static Character instance;
-  return instance;
+    static Character instance;
+    return instance;
 }
 
 Character::Character() noexcept

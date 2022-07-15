@@ -5,17 +5,17 @@
 
 struct Character
 {
-  QString           name;
-  QString           species;
-  int               comfy;
-  static Character& get();
+    QString           name;
+    QString           species;
+    int               comfy;
+    static Character& get();
 
- private:
-  Character();
-  explicit Character(const Character&) = delete;
-  explicit Character(Character&&)      = delete;
-  Character operator=(const Character&) = delete;
-  Character operator=(Character&&) = delete;
+  private:
+    Character();
+    explicit Character(const Character&) = delete;
+    explicit Character(Character&&)      = delete;
+    Character operator=(const Character&) = delete;
+    Character operator=(Character&&) = delete;
 };
 
 #endif // CHARACTER_H

@@ -4,5 +4,5 @@ MainWindow::MainWindow(QWidget* parent) noexcept
   : QMainWindow { parent }
   , nameField("test")
 {
-  setCentralWidget(&nameField);
+    setCentralWidget(&nameField);
 }
