@@ -8,14 +8,13 @@
 int main(int argCount, char* argVector[])
 {
     QApplication textfur(argCount, argVector);
+    textfur.setApplicationDisplayName("Textfur");
+    textfur.setApplicationVersion("0.1");
+    textfur.setDesktopFileName("org.text.fur.desktop");
+    textfur.setWindowIcon(QIcon::fromTheme("editor"));
 
-    // This window shows the content
     MainWindow window;
     window.show();
 
-    // Player should contain mutable information
-    // that changes throughout the game
-    Character& Player = Character::get();
-    Player.name       = "Blumen";
     textfur.exec();
 }
