@@ -9,10 +9,11 @@ MainWindow::MainWindow(QWidget* parent) noexcept : QMainWindow { parent }
     mainLayout.addLayout(&rightLayout);
     leftLayout.setLabelAlignment(Qt::AlignRight);
     leftLayout.setContentsMargins(10, 10, 10, 10);
-    leftLayout.addRow(&nameDesc, &nameField);
-    leftLayout.addRow(&ageDesc, &ageField);
-    leftLayout.addRow(&speciesDesc, &speciesField);
-    leftLayout.addRow(&comfyDesc, &comfyField);
+    leftLayout.addRow("Name", &nameField);
+    leftLayout.addRow("Age", &ageField);
+    leftLayout.addRow("Species", &speciesField);
+    leftLayout.addRow("Comfortableness", &comfyField);
+    leftLayout.addRow("Status", &statusbox);
     rightLayout.setContentsMargins(10, 10, 10, 10);
     rightLayout.addWidget(&textbox);
     rightLayout.addWidget(&input);

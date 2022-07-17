@@ -18,14 +18,11 @@ class MainWindow : public QMainWindow
     QHBoxLayout mainLayout;
     QFormLayout leftLayout;
     QVBoxLayout rightLayout;
-    QLabel      nameDesc { "Name" };
     QLineEdit   nameField;
-    QLabel      ageDesc { "Age" };
     QLineEdit   ageField;
-    QLabel      speciesDesc { "Species" };
     QLineEdit   speciesField;
-    QLabel      comfyDesc { "Comfortableness" };
     QLineEdit   comfyField;
+    QTextEdit   statusbox;
     QTextEdit   textbox;
     QLineEdit   input;
 
