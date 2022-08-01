@@ -7,7 +7,7 @@ This game has served as a means for me to learn how to code, especially with res
 The "default" preset builds with C++20, Ninja, MinSizeRel, compile_commands.json and .kateproject.
 
 ```
-cmake -B build/ --preset default
+cmake --preset default
 cmake --build build/
 cmake --install build/
 ```
