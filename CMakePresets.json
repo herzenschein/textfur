@@ -5,6 +5,7 @@
       "name": "default",
       "displayName": "Ninja, C++20, LSP, Kate Project",
       "generator": "Kate - Ninja",
+      "binaryDir": "${sourceDir}/build",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "MinSizeRel",
         "CMAKE_CXX_STANDARD": "20",
