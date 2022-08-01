@@ -1,4 +1,4 @@
-#include "character.h"
+#include "character.hpp"
 
 Character& Character::get()
 {

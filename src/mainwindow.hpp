@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include "character.h"
+#include "character.hpp"
 
 #include <QFormLayout>
 #include <QLabel>

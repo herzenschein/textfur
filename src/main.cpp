@@ -2,8 +2,8 @@
 #include <QApplication>
 
 // General Deps
-#include <character.h>
-#include <mainwindow.h>
+#include <character.hpp>
+#include <mainwindow.hpp>
 
 int main(int argCount, char* argVector[])
 {
