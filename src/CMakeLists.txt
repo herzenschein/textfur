@@ -1,5 +1,3 @@
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
-
 find_package(Qt6 REQUIRED COMPONENTS Widgets Quick)
 
 file(GLOB SOURCEFILES *.cpp *.hpp)
