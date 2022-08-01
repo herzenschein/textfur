@@ -1,5 +1,6 @@
 // Qt Deps
 #include <QApplication>
+#include <QQmlApplicationEngine>
 
 // General Deps
 #include <character.hpp>
@@ -13,8 +14,10 @@ int main(int argCount, char* argVector[])
     textfur.setDesktopFileName("org.text.fur.desktop");
     textfur.setWindowIcon(QIcon::fromTheme("editor"));
 
-    MainWindow window;
-    window.show();
+    QQmlApplicationEngine engine;
+    engine.load(QUrl("qrc:main.qml"));
+//     MainWindow window;
+//     window.show();
 
     textfur.exec();
 }

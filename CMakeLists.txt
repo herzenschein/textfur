@@ -11,11 +11,6 @@ message(------------------------------------------------------------------------
 
 cmake_minimum_required(VERSION 3.20)
 
-# Required for QtObject
-set(CMAKE_AUTOUIC ON)
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
-
 project(textfur)
 
 add_subdirectory(src)
