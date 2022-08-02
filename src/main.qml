@@ -39,6 +39,7 @@ ApplicationWindow {
 
                     labelText: "ComfyVar"
                     fieldText: "Initial"
+                    onFieldTextChanged: Character.comfyvar = fieldText
                 }
 
                 TextRow {
@@ -46,6 +47,7 @@ ApplicationWindow {
 
                     labelText: "Name"
                     fieldText: "Your name here"
+                    onFieldTextChanged: Character.name = fieldText
                 }
 
                 TextRow {
@@ -53,6 +55,7 @@ ApplicationWindow {
 
                     labelText: "Species"
                     fieldText: "Rabbit"
+                    onFieldTextChanged: Character.species = fieldText
                 }
 
                 Frame {
