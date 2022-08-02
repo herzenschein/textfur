@@ -91,7 +91,10 @@ ApplicationWindow {
                     Layout.alignment: Qt.AlignBottom
                     Layout.fillWidth: true
                     placeholderText: "Type here"
-                    focus: forceActiveFocus()
+
+                    Component.onCompleted: {
+                        forceActiveFocus()
+                    }
                 }
             }
         }
