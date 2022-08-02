@@ -1,14 +1,13 @@
 # Required packages
-find_package(Qt6 REQUIRED COMPONENTS Widgets Quick)
-
-# If you're reading this, don't use this
-file(GLOB SOURCEFILES *.cpp *.hpp)
+find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 # This takes care of AUTOMOC, AUTORCC and stuff
 qt_standard_project_setup()
 
 # Qt equivalent to add_executable
-qt_add_executable(textfur ${SOURCEFILES})
+qt_add_executable(textfur
+    main.cpp
+)
 
 # Make QML files importable
 qt_add_qml_module(textfur
@@ -23,4 +22,4 @@ qt_add_resources(textfur files
     FILES main.qml ../textfurinterface.png)
 
 # Specify target to compile against
-target_link_libraries(textfur PRIVATE Qt6::Widgets Qt6::Quick)
+target_link_libraries(textfur PRIVATE Qt6::Quick)

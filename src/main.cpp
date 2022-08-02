@@ -1,14 +1,11 @@
 // Qt Deps
-#include <QApplication>
+#include <QGuiApplication>
 #include <QQmlApplicationEngine>
-
-// General Deps
-#include <character.hpp>
-#include <mainwindow.hpp>
+#include <QIcon>
 
 int main(int argCount, char* argVector[])
 {
-    QApplication textfur(argCount, argVector);
+    QGuiApplication textfur(argCount, argVector);
     textfur.setApplicationDisplayName("Textfur");
     textfur.setApplicationVersion("0.1");
     textfur.setDesktopFileName("org.text.fur.desktop");
@@ -16,8 +13,6 @@ int main(int argCount, char* argVector[])
 
     QQmlApplicationEngine engine;
     engine.load(QUrl("qrc:main.qml"));
-//     MainWindow window;
-//     window.show();
 
     textfur.exec();
 }
