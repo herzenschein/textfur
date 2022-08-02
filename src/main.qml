@@ -5,9 +5,12 @@ import QtQuick.Controls.Material
 import Textfur
 
 ApplicationWindow {
+    id: root
     title: "Textfur"
     visible: true
-    height: 500
+    minimumHeight: 300
+    minimumWidth: 500
+    height: 400
     width: 700
     Material.theme: Material.Dark
 
@@ -17,6 +20,7 @@ ApplicationWindow {
         Frame {
             Layout.fillHeight: true
             Layout.fillWidth: true
+            Layout.preferredWidth: root.width / 2
 
             ColumnLayout {
                 anchors.fill: parent
@@ -25,6 +29,7 @@ ApplicationWindow {
                     Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
 
                     text: "TEXTGAME"
+                    font.bold: true
                 }
 
                 TextRow {
@@ -32,6 +37,7 @@ ApplicationWindow {
 
                     labelText: "ComfyVar"
                     fieldText: "Initial"
+
                     onFieldTextChanged: Character.comfyvar = fieldText
                 }
 
@@ -40,6 +46,7 @@ ApplicationWindow {
 
                     labelText: "Name"
                     fieldText: "Your name here"
+
                     onFieldTextChanged: Character.name = fieldText
                 }
 
@@ -48,6 +55,7 @@ ApplicationWindow {
 
                     labelText: "Species"
                     fieldText: "Rabbit"
+
                     onFieldTextChanged: Character.species = fieldText
                 }
 
@@ -70,6 +78,7 @@ ApplicationWindow {
         Frame {
             Layout.fillWidth: true
             Layout.fillHeight: true
+            Layout.preferredWidth: root.width / 2
 
             ColumnLayout {
                 anchors.fill: parent
@@ -82,7 +91,10 @@ ApplicationWindow {
                         anchors.fill: parent
                         text: "Welcome to my furry game!"
                         readOnly: true
-                        onActiveFocusChanged: focus = false
+
+                        onActiveFocusChanged: {
+                            focus = false
+                        }
                     }
                 }
 
