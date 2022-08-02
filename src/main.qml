@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 import QtQuick.Controls.Material
+import Textfur
 
 ApplicationWindow {
     title: "Textfur"
@@ -12,60 +13,64 @@ ApplicationWindow {
 
     RowLayout {
         anchors.fill: parent
+
         Frame {
             Layout.fillHeight: true
             Layout.fillWidth: true
-            GridLayout {
+
+            ColumnLayout {
                 anchors.fill: parent
-                columns: 2
+
                 Label {
-                    Layout.columnSpan: 2
                     Layout.alignment: Qt.AlignTop | Qt.AlignHCenter
 
                     text: "TEXTGAME"
                 }
 
-                Label {
+                TextRow {
                     Layout.fillWidth: true
 
-                    text: "ComfyVar"
+                    labelText: "Test"
+                    fieldText: "Test"
                 }
-                TextField {
+
+                TextRow {
                     Layout.fillWidth: true
 
-                    placeholderText: "Initial"
+                    labelText: "ComfyVar"
+                    fieldText: "Initial"
                 }
-                Label {
+
+                TextRow {
                     Layout.fillWidth: true
 
-                    text: "Name"
+                    labelText: "Name"
+                    fieldText: "Your name here"
                 }
-                TextField {
+
+                TextRow {
                     Layout.fillWidth: true
 
-                    placeholderText: "Your name here"
+                    labelText: "Species"
+                    fieldText: "Rabbit"
                 }
-                Label {
-                    Layout.fillWidth: true
 
-                    text: "Species"
-                }
-                TextField {
-                    Layout.fillWidth: true
-
-                    placeholderText: "Rabbit"
-                }
-                TextArea {
-                    Layout.columnSpan: 2
+                Frame {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
 
-                    text: "You are at home."
-                    readOnly: true
-                    horizontalAlignment: Text.AlignHCenter
+                    TextArea {
+                        anchors.fill: parent
+
+                        text: "You are at home."
+                        readOnly: true
+                        horizontalAlignment: Text.AlignHCenter
+                        onActiveFocusChanged: focus = false
+                    }
                 }
             }
         }
+
         Frame {
             Layout.fillWidth: true
             Layout.fillHeight: true
@@ -73,21 +78,24 @@ ApplicationWindow {
             ColumnLayout {
                 anchors.fill: parent
 
-                TextArea {
-                    Layout.alignment: Qt.AlignTop
+                ScrollView {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
 
-                    text: "Welcome to my furry game!"
-                    readOnly: true
+                    TextArea {
+                        anchors.fill: parent
+                        text: "Welcome to my furry game!"
+                        readOnly: true
+                        onActiveFocusChanged: focus = false
+                    }
                 }
-                TextField {
 
+                TextField {
+                    id: input
                     Layout.alignment: Qt.AlignBottom
                     Layout.fillWidth: true
-
-                    focus: true
                     placeholderText: "Type here"
+                    focus: forceActiveFocus()
                 }
             }
         }
