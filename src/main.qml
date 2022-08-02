@@ -93,6 +93,7 @@ ApplicationWindow {
                     Layout.fillHeight: true
 
                     TextArea {
+                        id: area
                         anchors.fill: parent
                         text: "Welcome to my furry game!"
                         readOnly: true
@@ -107,7 +108,13 @@ ApplicationWindow {
                     id: input
                     Layout.alignment: Qt.AlignBottom
                     Layout.fillWidth: true
+
                     placeholderText: "Type here"
+
+                    onEditingFinished: {
+                        area.append(input.text)
+                        input.clear()
+                    }
 
                     Component.onCompleted: {
                         forceActiveFocus()
