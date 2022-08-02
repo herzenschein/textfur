@@ -63,13 +63,18 @@ ApplicationWindow {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
 
-                    TextArea {
+                    ScrollView {
                         anchors.fill: parent
 
-                        text: "You are at home."
-                        readOnly: true
-                        horizontalAlignment: Text.AlignHCenter
-                        onActiveFocusChanged: focus = false
+                        TextArea {
+                            text: "You are at home."
+                            readOnly: true
+                            horizontalAlignment: Text.AlignHCenter
+
+                            onActiveFocusChanged: {
+                                focus = false
+                            }
+                        }
                     }
                 }
             }
