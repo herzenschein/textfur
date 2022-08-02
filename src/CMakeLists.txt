@@ -17,6 +17,6 @@ qt_add_qml_module(textfur
 # Automatically create qrc:
 qt_add_resources(textfur qmlfiles
     PREFIX "/"
-    FILES main.qml)
+    FILES main.qml ../textfurinterface.png)
 
 target_link_libraries(textfur PRIVATE Qt6::Widgets Qt6::Quick)
