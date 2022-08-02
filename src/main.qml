@@ -30,13 +30,6 @@ ApplicationWindow {
                 TextRow {
                     Layout.fillWidth: true
 
-                    labelText: "Test"
-                    fieldText: "Test"
-                }
-
-                TextRow {
-                    Layout.fillWidth: true
-
                     labelText: "ComfyVar"
                     fieldText: "Initial"
                     onFieldTextChanged: Character.comfyvar = fieldText
