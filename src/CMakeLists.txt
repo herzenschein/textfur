@@ -14,8 +14,7 @@ qt_add_executable(textfur ${SOURCEFILES})
 qt_add_qml_module(textfur
     URI Textfur
     VERSION 1.0
-    # No need to import main.qml as it's the entrypoint
-    QML_FILES TextRow.qml)
+    QML_FILES main.qml Character.qml TextRow.qml)
 
 # Automatically create qrc:
 qt_add_resources(textfur files
