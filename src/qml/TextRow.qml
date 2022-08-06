@@ -5,7 +5,10 @@ import QtQuick.Controls.Material
 
 RowLayout {
     property alias labelText: label.text
-    property alias fieldText: field.placeholderText
+    property alias fieldText: field.text
+    property alias fieldPlaceholder: field.placeholderText
+    property alias readOnly: field.readOnly
+    property bool canFocus: true
 
     readonly property int longest: {
         Math.max(label.implicitWidth, field.implicitWidth)
@@ -21,5 +24,10 @@ RowLayout {
         id: field
         placeholderText: ""
         Layout.fillWidth: true
+        onActiveFocusChanged: {
+            if (!canFocus) {
+                focus = false
+            }
+        }
     }
 }

@@ -9,7 +9,11 @@ qt_standard_project_setup()
 # Qt equivalent to add_executable
 qt_add_executable(${PROJECT_NAME} main.cpp )
 
-set_source_files_properties(Character.qml PROPERTIES QT_QML_SINGLETON_TYPE TRUE)
+set_source_files_properties("qml/Character.qml"
+    PROPERTIES
+    QT_QML_SINGLETON_TYPE ON
+    QT_RESOURCE_ALIAS Character.qml
+)
 
 # Make QML files importable
 qt_add_qml_module(${PROJECT_NAME}
@@ -18,9 +22,9 @@ qt_add_qml_module(${PROJECT_NAME}
     RESOURCE_PREFIX "/"
     RESOURCES "${CMAKE_CURRENT_SOURCE_DIR}/../textfurinterface.png"
     QML_FILES
-        "main.qml"
-        "Character.qml"
-        "TextRow.qml"
+        "qml/main.qml"
+        "qml/Character.qml"
+        "qml/TextRow.qml"
 )
 
 target_link_libraries(textfur PRIVATE Qt::Quick Qt::Qml)
