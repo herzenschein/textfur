@@ -1,7 +1,7 @@
 // Qt Deps
 #include <QGuiApplication>
-#include <QQmlApplicationEngine>
 #include <QIcon>
+#include <QQmlApplicationEngine>
 
 int main(int argCount, char* argVector[])
 {
@@ -12,7 +12,7 @@ int main(int argCount, char* argVector[])
     textfur.setWindowIcon(QIcon::fromTheme("editor"));
 
     QQmlApplicationEngine engine;
-    engine.load(QUrl("qrc:main.qml"));
+    engine.load(QStringLiteral("qrc:/Textfur/main.qml"));
 
     textfur.exec();
 }
