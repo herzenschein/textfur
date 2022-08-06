@@ -12,7 +12,7 @@ int main(int argCount, char* argVector[])
     textfur.setWindowIcon(QIcon::fromTheme("editor"));
 
     QQmlApplicationEngine engine;
-    engine.load(QStringLiteral("qrc:/Textfur/main.qml"));
+    engine.load(QStringLiteral("qrc:/Textfur/qml/main.qml"));
 
     textfur.exec();
 }

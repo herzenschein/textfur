@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 import QtQuick.Controls.Material
+import Textfur
 
 ApplicationWindow {
     id: root
@@ -35,16 +36,18 @@ ApplicationWindow {
                     Layout.fillWidth: true
 
                     labelText: "ComfyVar"
-                    fieldText: "Initial"
+                    fieldPlaceholder: "Initial"
+                    readOnly: true
+                    canFocus: false
 
-                    onFieldTextChanged: Character.comfyvar = fieldText
+                    onFieldTextChanged: Character.comfyvar = parseInt(fieldText)
                 }
 
                 TextRow {
                     Layout.fillWidth: true
 
                     labelText: "Name"
-                    fieldText: "Your name here"
+                    fieldPlaceholder: "Your name here"
 
                     onFieldTextChanged: Character.name = fieldText
                 }
@@ -53,7 +56,7 @@ ApplicationWindow {
                     Layout.fillWidth: true
 
                     labelText: "Species"
-                    fieldText: "Rabbit"
+                    fieldPlaceholder: "Rabbit"
 
                     onFieldTextChanged: Character.species = fieldText
                 }
