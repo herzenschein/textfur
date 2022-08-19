@@ -1,0 +1,23 @@
+{
+   "command": "textfur",
+   "finish-args": [
+      "--device=dri",
+      "--socket=wayland"
+   ],
+   "id": "com.text.fur",
+   "modules": [
+      {
+         "buildsystem": "cmake-ninja",
+         "name": "textfur",
+         "sources": [
+            {
+               "type": "dir",
+               "path": "."
+            }
+         ]
+      }
+   ],
+   "runtime": "org.kde.Platform",
+   "runtime-version": "6.3",
+   "sdk": "org.kde.Sdk"
+}

@@ -2,3 +2,4 @@ build-src-*
 build
 *.kdev4
 *.user
+.flatpak*

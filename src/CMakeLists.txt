@@ -28,3 +28,5 @@ qt_add_qml_module(${PROJECT_NAME}
 )
 
 target_link_libraries(textfur PRIVATE Qt::Quick Qt::Qml)
+
+install(TARGETS textfur DESTINATION ${CMAKE_INSTALL_BINDIR})
