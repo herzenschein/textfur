@@ -1,10 +1,9 @@
 {
-   "command": "textfur",
-   "finish-args": [
-      "--device=dri",
-      "--socket=wayland"
-   ],
    "id": "com.text.fur",
+   "command": "textfur",
+   "sdk": "org.kde.Sdk",
+   "runtime": "org.kde.Platform",
+   "runtime-version": "6.3",
    "modules": [
       {
          "buildsystem": "cmake-ninja",
@@ -16,8 +15,5 @@
             }
          ]
       }
-   ],
-   "runtime": "org.kde.Platform",
-   "runtime-version": "6.3",
-   "sdk": "org.kde.Sdk"
+   ]
 }
