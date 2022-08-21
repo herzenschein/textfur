@@ -3,11 +3,16 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 # Required packages
 find_package(Qt6 REQUIRED COMPONENTS Quick)
 
+include(${CMAKE_SOURCE_DIR}/cmake/Doxyqml.cmake)
+include(${CMAKE_SOURCE_DIR}/cmake/CPack.cmake)
+
 # This takes care of AUTOMOC, AUTORCC and stuff
 qt_standard_project_setup()
 
 # Qt equivalent to add_executable
-qt_add_executable(${PROJECT_NAME} main.cpp )
+qt_add_executable(${PROJECT_NAME}
+    main.cpp
+)
 
 set_source_files_properties("qml/Character.qml"
     PROPERTIES
