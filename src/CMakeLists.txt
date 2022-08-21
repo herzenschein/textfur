@@ -1,15 +1,12 @@
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-# Required packages
 find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 include(${CMAKE_SOURCE_DIR}/cmake/Doxyqml.cmake)
 include(${CMAKE_SOURCE_DIR}/cmake/CPack.cmake)
 
-# This takes care of AUTOMOC, AUTORCC and stuff
 qt_standard_project_setup()
 
-# Qt equivalent to add_executable
 qt_add_executable(${PROJECT_NAME}
     main.cpp
 )
@@ -20,7 +17,6 @@ set_source_files_properties("qml/Character.qml"
     QT_RESOURCE_ALIAS Character.qml
 )
 
-# Make QML files importable
 qt_add_qml_module(${PROJECT_NAME}
     URI "Textfur"
     VERSION 1.0
@@ -32,6 +28,6 @@ qt_add_qml_module(${PROJECT_NAME}
         "qml/TextRow.qml"
 )
 
-target_link_libraries(textfur PRIVATE Qt::Quick Qt::Qml)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Quick Qt6::Qml)
 
-install(TARGETS textfur DESTINATION ${CMAKE_INSTALL_BINDIR})
+install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_BINDIR})
