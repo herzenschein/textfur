@@ -2,7 +2,9 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 import QtQuick.Controls.Material
-import Textfur
+
+import Character
+import TextManager
 
 ApplicationWindow {
     id: root
@@ -12,7 +14,7 @@ ApplicationWindow {
     minimumWidth: 500
     height: 400
     width: 700
-    Material.theme: Material.Dark
+    Material.theme: Material.System
 
     RowLayout {
         anchors.fill: parent
@@ -36,18 +38,20 @@ ApplicationWindow {
                     Layout.fillWidth: true
 
                     labelText: "ComfyVar"
-                    fieldPlaceholder: "Initial"
+                    fieldText: Character.comfyVar
                     readOnly: true
                     canFocus: false
 
-                    onFieldTextChanged: Character.comfyvar = parseInt(fieldText)
+                    onFieldTextChanged: Character.comfyVar = parseInt(fieldText)
                 }
 
                 TextRow {
                     Layout.fillWidth: true
 
                     labelText: "Name"
-                    fieldPlaceholder: "Your name here"
+                    fieldText: Character.name
+                    readOnly: true
+                    canFocus: false
 
                     onFieldTextChanged: Character.name = fieldText
                 }
@@ -56,17 +60,17 @@ ApplicationWindow {
                     Layout.fillWidth: true
 
                     labelText: "Species"
-                    fieldPlaceholder: "Rabbit"
+                    fieldText: Character.species
+                    readOnly: true
+                    canFocus: false
 
                     onFieldTextChanged: Character.species = fieldText
                 }
 
-                Frame {
+                    ScrollView {
                     Layout.fillWidth: true
                     Layout.fillHeight: true
-
-                    ScrollView {
-                        anchors.fill: parent
+                    topPadding: 10
 
                         TextArea {
                             text: "You are at home."
@@ -77,7 +81,7 @@ ApplicationWindow {
                                 focus = false
                             }
                         }
-                    }
+
                 }
             }
         }
@@ -96,8 +100,7 @@ ApplicationWindow {
 
                     TextArea {
                         id: area
-                        anchors.fill: parent
-                        text: "Welcome to my furry game!"
+                        text: TextManager.areaText
                         readOnly: true
 
                         onActiveFocusChanged: {
